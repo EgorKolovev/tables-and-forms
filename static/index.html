@@ -12,41 +12,35 @@
         <label for="petType">Тип питомца:</label>
         <select name="petType" id="petType" required>
             <option value="">Выберите</option>
-            <option value="hedgehog">Ежик</option>
             <option value="cat">Кошка</option>
-            <option value="krot">Крот</option>
-            <option value="rat">Крыса</option>
             <option value="dog">Собака</option>
+            <option value="tiger">Тигр</option>
         </select>
         <br><br>
 
         <fieldset>
             <legend>Пол:</legend>
             <label>
-                <input type="radio" name="gender" value="male" required>
+                <input type="radio" name="gender" value="boy" required>
                 Мальчик
             </label>
             <label>
-                <input type="radio" name="gender" value="female" required>
+                <input type="radio" name="gender" value="girl" required>
                 Девочка
+            </label>
+            <label>
+                <input type="radio" name="gender" value="none" required>
+                Неважно
             </label>
         </fieldset>
         <br>
 
         <label for="eyeColor">Цвет глаз:</label>
-        <select name="eyeColor" id="eyeColor" required>
-            <option value="">Выберите</option>
-            <option value="blue">Голубой</option>
-            <option value="green">Зелёный</option>
-            <option value="white">Белый</option>
-            <option value="brown">Карий</option>
-            <option value="yellow">Жёлтый</option>
-            <option value="red">Красный</option>
-        </select>
+        <input type="color" id="eyeColor" name="eyeColor" value="#000000" required>
         <br><br>
 
         <label for="tailLength">Длина хвоста (в см):</label>
-        <input type="number" name="tailLength" id="tailLength" placeholder="например, 7" min="0" required>
+        <input type="number" name="tailLength" id="tailLength" placeholder="например, 8" min="7" max="120" required>
         <br><br>
 
         <label for="name">Имя питомца:</label>
@@ -62,18 +56,17 @@
         <br><br>
 
         <label for="phone">Телефон:</label>
-        <input type="tel" name="phone" id="phone" placeholder="к примеру, +79221111111" required>
+        <input type="tel" name="phone" id="phone" placeholder="+79*********" required>
         <br><br>
 
         <label for="rules">
-            <input type="checkbox" name="rules" id="rules" required>
+            <input type="checkbox" name="rules" id="rules" value="true" required>
             Я принимаю правила приюта
         </label>
         <br><br>
         <button type="submit">Отправить заявку</button>
         <button type="reset">Сбросить</button>
     </form>
-
 </main>
 </body>
 </html>
