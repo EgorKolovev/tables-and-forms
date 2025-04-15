@@ -34,15 +34,15 @@
         <br>
 
         <label for="eyeColor">Цвет глаз:</label>
-        <input list="eyeColors" name="eyeColor" id="eyeColor" placeholder="к примеру, красный" required>
-        <datalist id="eyeColors">
-            <option value="blue">
-            <option value="green">
-            <option value="white">
-            <option value="brown">
-            <option value="yellow">
-            <option value="red">
-        </datalist>
+        <select name="eyeColor" id="eyeColor" required>
+            <option value="">Выберите</option>
+            <option value="blue">Голубой</option>
+            <option value="green">Зелёный</option>
+            <option value="white">Белый</option>
+            <option value="brown">Карий</option>
+            <option value="yellow">Жёлтый</option>
+            <option value="red">Красный</option>
+        </select>
         <br><br>
 
         <label for="tailLength">Длина хвоста (в см):</label>
@@ -71,6 +71,7 @@
         </label>
         <br><br>
         <button type="submit">Отправить заявку</button>
+        <button type="reset">Сбросить</button>
     </form>
 
 </main>
