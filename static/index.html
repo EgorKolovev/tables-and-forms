@@ -8,8 +8,70 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form action="/pets/orders" method="POST">
+        <label for="petType">Тип питомца:</label>
+        <select name="petType" id="petType" required>
+            <option value="">Выберите</option>
+            <option value="hedgehog">Ежик</option>
+            <option value="cat">Кошка</option>
+            <option value="krot">Крот</option>
+            <option value="rat">Крыса</option>
+            <option value="dog">Собака</option>
+        </select>
+        <br><br>
 
-    <!--Форму размещай тут-->
+        <fieldset>
+            <legend>Пол:</legend>
+            <label>
+                <input type="radio" name="gender" value="male" required>
+                Мальчик
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required>
+                Девочка
+            </label>
+        </fieldset>
+        <br>
+
+        <label for="eyeColor">Цвет глаз:</label>
+        <input list="eyeColors" name="eyeColor" id="eyeColor" placeholder="к примеру, красный" required>
+        <datalist id="eyeColors">
+            <option value="blue">
+            <option value="green">
+            <option value="white">
+            <option value="brown">
+            <option value="yellow">
+            <option value="red">
+        </datalist>
+        <br><br>
+
+        <label for="tailLength">Длина хвоста (в см):</label>
+        <input type="number" name="tailLength" id="tailLength" placeholder="например, 7" min="0" required>
+        <br><br>
+
+        <label for="name">Имя питомца:</label>
+        <input type="text" name="name" id="name" placeholder="к примеру, Лиса" required>
+        <br><br>
+
+        <label for="dateOfBirth">Дата рождения:</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+        <br><br>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" name="email" id="email" placeholder="xexexe@xex.com" required>
+        <br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" name="phone" id="phone" placeholder="к примеру, +79221111111" required>
+        <br><br>
+
+        <label for="rules">
+            <input type="checkbox" name="rules" id="rules" required>
+            Я принимаю правила приюта
+        </label>
+        <br><br>
+        <button type="submit">Отправить заявку</button>
+    </form>
 
 </main>
 </body>
